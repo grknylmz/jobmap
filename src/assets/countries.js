@@ -1,349 +1,275 @@
 const countries = [
   {
-    timezones: [
-      "Australia/Lord_Howe",
-      "Antarctica/Macquarie",
-      "Australia/Hobart",
-      "Australia/Currie",
-      "Australia/Melbourne",
-      "Australia/Sydney",
-      "Australia/Broken_Hill",
-      "Australia/Brisbane",
-      "Australia/Lindeman",
-      "Australia/Adelaide",
-      "Australia/Darwin",
-      "Australia/Perth",
-      "Australia/Eucla"
-    ],
+    timezones: ["Australia/Melbourne"],
     latlng: [-27, 133],
     name: "Australia",
     country_code: "AU",
-    capital: "Canberra"
+    capital: "Canberra",
+    url: "https://au.indeed.com/"
   },
   {
     timezones: ["Europe/Vienna"],
     latlng: [47.33333333, 13.33333333],
     name: "Austria",
     country_code: "AT",
-    capital: "Vienna"
+    capital: "Vienna",
+    url: "https://at.indeed.com/"
   },
   {
     timezones: ["Europe/Brussels"],
     latlng: [50.83333333, 4],
     name: "Belgium",
     country_code: "BE",
-    capital: "Brussels"
+    capital: "Brussels",
+    url: "https://be.indeed.com/"
   },
   {
     timezones: ["Europe/Sofia"],
     latlng: [43, 25],
     name: "Bulgaria",
     country_code: "BG",
-    capital: "Sofia"
+    capital: "Sofia",
+    url: null
   },
   {
     timezones: ["Europe/Minsk"],
     latlng: [53, 28],
     name: "Belarus",
     country_code: "BY",
-    capital: "Minsk"
+    capital: "Minsk",
+    url: null
   },
   {
-    timezones: ["Europe/Oslo"],
-    latlng: [-54.43333333, 3.4],
-    name: "Bouvet Island",
-    country_code: "BV",
-    capital: null
-  },
-  {
-    timezones: [
-      "America/St_Johns",
-      "America/Halifax",
-      "America/Glace_Bay",
-      "America/Moncton",
-      "America/Goose_Bay",
-      "America/Blanc-Sablon",
-      "America/Toronto",
-      "America/Nipigon",
-      "America/Thunder_Bay",
-      "America/Iqaluit",
-      "America/Pangnirtung",
-      "America/Atikokan",
-      "America/Winnipeg",
-      "America/Rainy_River",
-      "America/Resolute",
-      "America/Rankin_Inlet",
-      "America/Regina",
-      "America/Swift_Current",
-      "America/Edmonton",
-      "America/Cambridge_Bay",
-      "America/Yellowknife",
-      "America/Inuvik",
-      "America/Creston",
-      "America/Dawson_Creek",
-      "America/Fort_Nelson",
-      "America/Vancouver",
-      "America/Whitehorse",
-      "America/Dawson"
-    ],
+    timezones: ["America/Toronto"],
     latlng: [60, -95],
     name: "Canada",
     country_code: "CA",
-    capital: "Ottawa"
+    capital: "Ottawa",
+    url: "https://www.indeed.ca/"
   },
   {
     timezones: ["Europe/Zurich"],
     latlng: [47, 8],
     name: "Switzerland",
     country_code: "CH",
-    capital: "Bern"
+    capital: "Bern",
+    url: "https://www.indeed.ch/"
   },
   {
     timezones: ["Europe/Prague"],
     latlng: [49.75, 15.5],
     name: "Czech Republic",
     country_code: "CZ",
-    capital: "Prague"
+    capital: "Prague",
+    url: "https://cz.indeed.com/"
   },
   {
     timezones: ["Europe/Berlin", "Europe/Busingen"],
     latlng: [51, 9],
     name: "Germany",
     country_code: "DE",
-    capital: "Berlin"
+    capital: "Berlin",
+    url: "https://de.indeed.com/"
   },
   {
     timezones: ["Europe/Copenhagen"],
     latlng: [56, 10],
     name: "Denmark",
     country_code: "DK",
-    capital: "Copenhagen"
+    capital: "Copenhagen",
+    url: "https://dk.indeed.com/"
   },
   {
     timezones: ["Europe/Madrid", "Africa/Ceuta", "Atlantic/Canary"],
     latlng: [40, -4],
     name: "Spain",
     country_code: "ES",
-    capital: "Madrid"
+    capital: "Madrid",
+    url: "https://www.indeed.es/"
   },
   {
     timezones: ["Europe/Tallinn"],
     latlng: [59, 26],
     name: "Estonia",
     country_code: "EE",
-    capital: "Tallinn"
+    capital: "Tallinn",
+    url: null
   },
   {
     timezones: ["Europe/Helsinki"],
     latlng: [64, 26],
     name: "Finland",
     country_code: "FI",
-    capital: "Helsinki"
+    capital: "Helsinki",
+    url: "https://at.indeed.com/"
   },
   {
     timezones: ["Europe/Paris"],
     latlng: [46, 2],
     name: "France",
     country_code: "FR",
-    capital: "Paris"
+    capital: "Paris",
+    url: "https://www.indeed.fr/"
   },
   {
     timezones: ["Europe/London"],
     latlng: [54, -2],
     name: "United Kingdom",
     country_code: "GB",
-    capital: "London"
+    capital: "London",
+    url: "https://at.indeed.com/"
   },
   {
     timezones: ["Europe/Athens"],
     latlng: [39, 22],
     name: "Greece",
     country_code: "GR",
-    capital: "Athens"
+    capital: "Athens",
+    url: "https://gr.indeed.com/"
   },
   {
     timezones: ["Europe/Zagreb"],
     latlng: [45.16666666, 15.5],
     name: "Croatia",
     country_code: "HR",
-    capital: "Zagreb"
+    capital: "Zagreb",
+    url: null
   },
   {
     timezones: ["Europe/Budapest"],
     latlng: [47, 20],
     name: "Hungary",
     country_code: "HU",
-    capital: "Budapest"
+    capital: "Budapest",
+    url: "https://hu.indeed.com/"
   },
   {
     timezones: ["Europe/Dublin"],
     latlng: [53, -8],
     name: "Ireland",
     country_code: "IE",
-    capital: "Dublin"
-  },
-  {
-    timezones: ["Atlantic/Reykjavik"],
-    latlng: [65, -18],
-    name: "Iceland",
-    country_code: "IS",
-    capital: "Reykjavik"
+    capital: "Dublin",
+    url: "https://ie.indeed.com/"
   },
   {
     timezones: ["Europe/Rome"],
     latlng: [42.83333333, 12.83333333],
     name: "Italy",
     country_code: "IT",
-    capital: "Rome"
-  },
-  {
-    timezones: ["Europe/Vilnius"],
-    latlng: [56, 24],
-    name: "Lithuania",
-    country_code: "LT",
-    capital: "Vilnius"
+    capital: "Rome",
+    url: "https://it.indeed.com/"
   },
   {
     timezones: ["Europe/Luxembourg"],
     latlng: [49.75, 6.16666666],
     name: "Luxembourg",
     country_code: "LU",
-    capital: "Luxembourg"
+    capital: "Luxembourg",
+    url: "https://www.indeed.lu/"
   },
   {
     timezones: ["Europe/Riga"],
     latlng: [57, 25],
     name: "Latvia",
     country_code: "LV",
-    capital: "Riga"
-  },
-  {
-    timezones: ["Europe/Monaco"],
-    latlng: [43.73333333, 7.4],
-    name: "Monaco",
-    country_code: "MC",
-    capital: "Monaco"
+    capital: "Riga",
+    url: "https://at.indeed.com/"
   },
   {
     timezones: ["Europe/Amsterdam"],
     latlng: [52.5, 5.75],
     name: "Netherlands",
     country_code: "NL",
-    capital: "Amsterdam"
+    capital: "Amsterdam",
+    url: "https://at.indeed.com/"
   },
   {
     timezones: ["Europe/Oslo"],
     latlng: [62, 10],
     name: "Norway",
     country_code: "NO",
-    capital: "Oslo"
+    capital: "Oslo",
+    url: "https://no.indeed.com/"
   },
   {
     timezones: ["Pacific/Auckland", "Pacific/Chatham"],
     latlng: [-41, 174],
     name: "New Zealand",
     country_code: "NZ",
-    capital: "Wellington"
+    capital: "Wellington",
+    url: "https://nz.indeed.com/"
   },
   {
     timezones: ["Europe/Warsaw"],
     latlng: [52, 20],
     name: "Poland",
     country_code: "PL",
-    capital: "Warsaw"
+    capital: "Warsaw",
+    url: "https://pl.indeed.com/"
   },
   {
-    timezones: ["Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores"],
+    timezones: ["Europe/Lisbon"],
     latlng: [39.5, -8],
     name: "Portugal",
     country_code: "PT",
-    capital: "Lisbon"
+    capital: "Lisbon",
+    url: "https://www.indeed.pt/"
   },
   {
     timezones: ["Europe/Bucharest"],
     latlng: [46, 25],
     name: "Romania",
     country_code: "RO",
-    capital: "Bucharest"
+    capital: "Bucharest",
+    url: "https://ro.indeed.com/"
   },
   {
     timezones: ["Asia/Singapore"],
     latlng: [1.36666666, 103.8],
     name: "Singapore",
     country_code: "SG",
-    capital: "Singapore"
+    capital: "Singapore",
+    url: "https://www.indeed.com.sg/"
   },
   {
     timezones: ["Europe/Bratislava"],
     latlng: [48.66666666, 19.5],
     name: "Slovakia",
     country_code: "SK",
-    capital: "Bratislava"
-  },
-  {
-    timezones: ["Europe/Ljubljana"],
-    latlng: [46.11666666, 14.81666666],
-    name: "Slovenia",
-    country_code: "SI",
-    capital: "Ljubljana"
+    capital: "Bratislava",
+    url: null
   },
   {
     timezones: ["Europe/Stockholm"],
     latlng: [62, 15],
     name: "Sweden",
     country_code: "SE",
-    capital: "Stockholm"
+    capital: "Stockholm",
+    url: "https://se.indeed.com/"
   },
   {
     timezones: ["Europe/Istanbul"],
     latlng: [39, 35],
     name: "Turkey",
     country_code: "TR",
-    capital: "Ankara"
+    capital: "Ankara",
+    url: "https://tr.indeed.com/"
   },
   {
-    timezones: ["Europe/Kiev", "Europe/Uzhgorod", "Europe/Zaporozhye"],
+    timezones: ["Europe/Kiev"],
     latlng: [49, 32],
     name: "Ukraine",
     country_code: "UA",
-    capital: "Kiev"
+    capital: "Kiev",
+    url: "https://ua.indeed.com/"
   },
   {
-    timezones: [
-      "America/New_York",
-      "America/Detroit",
-      "America/Kentucky/Louisville",
-      "America/Kentucky/Monticello",
-      "America/Indiana/Indianapolis",
-      "America/Indiana/Vincennes",
-      "America/Indiana/Winamac",
-      "America/Indiana/Marengo",
-      "America/Indiana/Petersburg",
-      "America/Indiana/Vevay",
-      "America/Chicago",
-      "America/Indiana/Tell_City",
-      "America/Indiana/Knox",
-      "America/Menominee",
-      "America/North_Dakota/Center",
-      "America/North_Dakota/New_Salem",
-      "America/North_Dakota/Beulah",
-      "America/Denver",
-      "America/Boise",
-      "America/Phoenix",
-      "America/Los_Angeles",
-      "America/Anchorage",
-      "America/Juneau",
-      "America/Sitka",
-      "America/Metlakatla",
-      "America/Yakutat",
-      "America/Nome",
-      "America/Adak",
-      "Pacific/Honolulu"
-    ],
+    timezones: ["America/New_York"],
     latlng: [38, -97],
     name: "United States",
     country_code: "US",
-    capital: "Washington D.C."
+    capital: "Washington D.C.",
+    url: "https://www.indeed.com/"
   }
 ];
 
