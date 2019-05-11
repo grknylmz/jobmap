@@ -43,7 +43,7 @@ export default {
     createMap() {
       var lat = 50.0755381;
       var long = 14.43780049999998;
-      return L.map("map").setView([lat, long], 5);
+      return L.map("map").setView([lat, long], 4);
     },
     prepareMap() {
       const token =
@@ -51,11 +51,12 @@ export default {
       this.map = this.createMap();
 
       L.tileLayer(
-        "https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token={access_token}",
+        "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={access_token}",
         {
           maxZoom: 7,
           minZoom: 3,
           id: "mapbox.light",
+          style: "mapbox://styles/mapbox/streets-v11",
           access_token: token
         }
       ).addTo(this.map);
