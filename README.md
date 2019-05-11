@@ -1,5 +1,7 @@
 # jobmap
 
+Vue + Leaflet Maps
+
 ## Project setup
 ```
 yarn install
